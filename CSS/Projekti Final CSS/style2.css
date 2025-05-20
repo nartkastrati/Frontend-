@@ -1,0 +1,274 @@
+body{
+    background-color: black;
+}
+.sector1{
+    color: green;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 533px;
+    top: 20px;
+    margin-top: 200px;
+}
+#noescape{
+    color: red;
+    font-family: monospace;
+}
+#hey{
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    border: 1px solid red;
+    color: red;
+    font-family: monospace;
+    cursor: pointer;
+}
+#hey:hover{
+    background-color: red;
+    color: black;
+}
+#div2{
+    background-color: black;
+    margin-left: 520px;
+    max-width: 300px;
+    max-height: 290px;
+    height: 290px;
+    width: 300px;
+    border: 1px solid green;
+    border-radius: 100%;
+    left: 530px;
+    margin-top: 200px;
+    box-shadow: 1px 3px 2px green;
+}
+#Yes{
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+#No{
+    top: 200px;
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+}
+#Yes:hover{
+    background-color: green;
+    color: black;
+}
+#No:hover{
+    background-color: green;
+    color: black;
+}
+h1{
+    color: green;
+    font-family: monospace;
+}
+h2{
+    color: green;
+    font-family: monospace;
+}
+h3{
+    color: green;
+    font-family: monospace;
+}
+h4{
+    color: green;
+    font-family: monospace;
+}
+#div1{
+    background-color: black;
+}
+#option1{
+    height: 50px;
+    width: 170px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: large;
+    vertical-align: top; 
+}
+#option2{
+    height: 50px;
+    width: 160px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: large;
+    vertical-align: top; 
+}
+#option3{
+    height: 50px;
+    width: 180px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: large;
+    vertical-align: top; 
+}
+#option4{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: large;
+    vertical-align: top; 
+}
+#option1:hover{
+    background-color: green;
+    color: black;
+}
+#option2:hover{
+    background-color: green;
+    color: black;
+}
+#option3:hover{
+    background-color: green;
+    color: black;
+}
+#option4:hover{
+    background-color: green;
+    color: black;
+}
+#isaac{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#isaac:hover{
+    height: 300px;
+    width: 250px;
+    opacity: 1;
+}
+#kosova{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#kosova:hover{
+    height: 300px;
+    width: 350px;
+    opacity: 1;
+}
+#html{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#html:hover{
+    height: 270px;
+    width: 300px;
+    opacity: 1;
+}
+#css{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#css:hover{
+    height: 270px;
+    width: 280px;
+    opacity: 1;
+}
+#wii{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#wii:hover{
+    height: 400px;
+    width: 370px;
+    opacity: 1;
+}
+#wordpress{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#wordpress:hover{
+    height: 270px;
+    width: 280px;
+    opacity: 1;
+}
+#java{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#java:hover{
+    height: 270px;
+    width: 160px;
+    opacity: 1;
+}
+#ww2{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#ww2:hover{
+    height: 250px;
+    width: 360px;
+    opacity: 1;
+}
+#spain{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#spain:hover{
+    height: 270px;
+    width: 370px;
+    opacity: 1;
+}
+#gun{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    opacity: 0.7;
+}
+#gun:hover{
+    height: 270px;
+    width: 270px;
+    opacity: 1;
+}
+#option11{
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+}
+#option22{
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    font-family: monospace;
+    cursor: pointer;
+}
+#option11:hover{
+    background-color: green;
+    color: black;
+}
+#option22:hover{
+    background-color: green;
+    color: black;
+}

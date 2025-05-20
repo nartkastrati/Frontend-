@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GET SET JQUERY </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body style="padding-left: 15px">
+    <h1>JQuery Methods GET and SET data</h1>
+    <h2>GET</h2>
+    <ol id="ol1">
+        <li>Prizren</li>
+        <li>Prizren</li>
+        <li>Prizren</li>
+        <li>Kosove</li>
+    </ol>
+    <input id="input1" type="text" value="text5">
+    <button id="but1">Text</button>
+    <button id="but2">HTML</button>
+    <button id="but3">Value</button>
+    <button id="but4">Attribute</button>
+    <script>
+        $(document).ready(function(){
+            $('#but1').click(function(){
+            document.write($('#ol1').text());
+        });
+    });
+    $(document).ready(function(){
+        $('#but2').click(function(){
+            document.write($('#ol1').html());
+        });
+    });
+    $(document).ready(function(){
+        $('#but3').click(function(){
+            document.write($('#input1').val());
+        });
+    });
+    $(document).ready(function(){
+        $('#but4').click(function(){
+            document.write($('#input1').attr("type"));
+        });
+    });
+    </script>
+    <h2>SET</h2>
+
+    <img src="image-removebg-preview (8).png" width="350px" height="300px">
+    <ol id="ol2">
+        <li>prizrne</li>
+        <li>prizrne</li>
+        <li>prizrne</li>
+    </ol> 
+    <input id="input2" type="text" value="text">
+    <button id="but5">Set Text</button>
+    <button id="but6">Set HTML</button>
+    <button id="but7">Set Value</button>
+    <button id="but8">Set Attribute</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#but5').click(function(){
+                $('#ol2').text('shkolla');
+            });
+        });
+
+        $(document).ready(function(){
+            $('#but6').click(function(){
+                $('#ol2').text('<li>shkolla</li>');
+            });
+        });
+        $(document).ready(function(){
+            $('#but7').click(function(){
+                $('#input2').val('Kosova');
+            });
+        });
+        $(document).ready(function(){
+            $('#but8').click(function(){
+                $('img').attr('src',"pngtree-cartoon-magnifying-glass.png");
+            });
+        });
+    </script>
+</body>
+</html>

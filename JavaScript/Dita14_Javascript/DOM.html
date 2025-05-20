@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Gjilani</p>
+    <p id="p2"></p>
+    <h3>DOM Methods</h3>
+    <script>
+        var x = document.getElementById('p1');
+        document.getElementById('p2').innerHTML='Qyteti me i bukur eshte: ' + x.innerHTML;
+    </script>
+    <br>
+    <p>Suhareke</p>
+    <p>Mitrovice</p>
+    <p id="p3"></p>
+    <script>
+        var y=document.getElementsByTagName('p');
+        document.getElementById('p3').innerHTML='Qyteti me i bukur eshte: ' + y[1].innerHTML;
+    </script>
+    <h3>DOM HTML</h3>
+    <p class ='klasa'>Prizreni</p>
+    <p class ='klasa'>Prishtina</p>
+    <p id="p4"></p>
+    <script>
+        var z = document.getElementsByClassName('klasa');
+        document.getElementById('p4').innerHTML = 'Qyteti me i bukur eshte: ' + z[0].innerHTML;
+    </script>
+    <br>    
+    <h3>DOM CSS</h3>
+    <h1 id="header">Pershendetje!</h1>
+        <button onclick="document.getElementById('header').style.color = 'red'">Kliko ketu!</button>
+    <br>
+    <h3>DOM JS</h3>
+    <p id="hello">Ky eshte nje paragraf</p>
+    <button onclick="nart()">Rrit tekstin</button>
+
+    <script>
+        function nart(){
+            document.getElementById("hello").style.fontSize = "large";
+        }
+    </script>
+</body>
+</html>

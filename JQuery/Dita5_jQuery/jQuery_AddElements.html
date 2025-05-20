@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>ADD and REMOVE ELEMENTS</h1>
+        <h2>ADD ELEMENTS</h2>
+        <h3>APPEND</h3>
+        <p id='p1'>Shkolla Digjitale</p>
+		<ol id='ol1'>
+			<li>Prizren</li>
+			<li>Prizren</li>
+			<li>Prizren</li>
+		</ol>
+		<button id='but1'>Append P1</button>
+		<button id='but2'>Append2 Ol1</button>
+	
+		<script>
+			//.append()-shtohet tekst mbrapa(para) elementit te caktuar.
+			$(document).ready(function()
+			{
+				$('#but1').click(function()
+				{
+					$('#p1').append(' Prizren')
+				});
+			});
+			$(document).ready(function()
+			{
+				$('#but2').click(function()
+				{
+					$('#ol1').append('<b><li>Prizren</li></b> ')
+                          
+                    //Pyetje? 
+                    //$('#ol1').append('<li>Prizren</li>')
+				});
+			});
+		</script>
+		
+        <h3>PREPEND</h3>
+        
+		<p id='p2'>Shkolla Digjitale</p>
+		<ol id='ol2'>
+			<li>prizren</li>
+			<li>prizren</li>
+			<li>prizren</li>
+		</ol>
+		<button id='but3'>Prepend P2</button>
+		<button id='but4'>Prepend2 Ol2</button>
+        
+		<script>
+			//.prepend()- Shtohet tekst perpara(fillim) elementit te caktuar.
+			$(document).ready(function()
+			{
+				$('#but3').click(function()
+				{
+					$('#p2').prepend('Prizren ')
+				});
+			});
+			$(document).ready(function()
+			{
+				$('#but4').click(function()
+				{
+					//$('#ol2').prepend('Prizren')
+                            
+                    //Pyetje? 
+                    $('#ol2').prepend('<li>Prizren</li>')
+				});
+			});
+		</script> 
+		<p>BEFORE and AFTER</p>   
+        <p id='p3'>Shkolla Digjitale</p>
+		<ol id='ol3'>
+			<li>prizren</li>
+			<li>prizren</li>
+			<li>prizren</li>
+		</ol>
+		<br><button id='but5'>Before P3</button>
+		<button id='but6'>After P3</button>
+		<button id='but7'>Before Ol3</button>
+		<button id='but8'>After Ol3</button>   
+		<script>
+			//.before()- Shtohet tekst perpara elementit, dallimi me append eshte se tek before teksti qe e shtojme del ne rreshte te ri apo kryerresht.
+			$(document).ready(function()
+			{
+				$('#but5').click(function()
+				{
+					$('#p3').before('<p>Prizren</p> ')
+				});
+			//.after()- Shtohet tekst prapa elementit, dallimi me prepend eshte se tek after teksti qe e shtojme del ne rreshte te ri apo kryerresht.
+				$('#but6').click(function()
+				{
+					$('#p3').after('Prizren ')
+				});
+			});
+			$(document).ready(function()
+			{
+				$('#but7').click(function()
+				{
+					 //$('#ol3').before('Prizren'); 
+                    $('#ol3').before('<li>Prizren</li>')
+				});
+				$('#but8').click(function()
+				{
+					 //$('#ol3').after('Prizren');
+                    $('#ol3').after('<li>Prizren</li>')
+				});
+			});
+		</script>	
+		<h2>REMOVE ELEMENTS</h2>
+		<h3>Remove</h3>  
+        <p id='p4'>Shkolla Digjitale</p>
+		<ol id='ol4' style='border:1px solid black;width:200px; height:200px'>
+			<li>prizren</li>
+			<li>prizren</li>
+			<li>prizren</li>
+		</ol>
+		<button id='but9'>Remove P4</button>
+		<button id='but10'>Remove2 Ol4</button>
+        <button id='but14'>Shto1 Ol4</button>
+        
+		<script>
+			//.remove()
+			$(document).ready(function()
+			{
+				$('#but9').click(function()
+				{
+					$('#p4').remove()
+				});
+			});
+			$(document).ready(function()
+			{
+				$('#but10').click(function()
+				{
+					$('#ol4').remove()
+				});
+                $('#but14').click(function()
+				{        
+					 //$('#ol4').after('Prizren'); //Pyetje? 
+                    $('#ol4').prepend('<li>Prizren</li>') //shton element
+				});
+			});
+		</script>
+
+		<h3>Empty</h3>
+        <p id='p5'>Shkolla Digjitale</p>
+		<ol id='ol5' style='border:1px solid black;width:200px; height:200px'>
+			<li>prizren</li>
+			<li>prizren</li>
+			<li>prizren</li>
+		</ol>
+		<button id='but11'>Empty P5</button>
+		<button id='but12'>Empty2 Ol5</button>
+        <button id='but13'>Shto Ol5</button>
+        
+		<script>
+			//.empty()
+			$(document).ready(function()
+			{
+				$('#but11').click(function()
+				{
+					$('#p5').empty()
+				});
+			});
+			$(document).ready(function()
+			{
+				$('#but12').click(function()
+				{
+					$('#ol5').empty()
+				});
+                $('#but13').click(function()
+				{
+					 //$('#ol5').after('<li>Prizren</li>'); //Pyetje? 
+                    $('#ol5').prepend('<li>Prizren</li>')
+				});
+			});
+		</script>
+	</body>
+</html>

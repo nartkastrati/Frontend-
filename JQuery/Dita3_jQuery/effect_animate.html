@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>EFFECTS IN JQUERY</h1>
+    <h1>Animation</h1>
+    <button id="but1">Animate</button>
+    <div id="div1" style="background-color: red;width: 200px;height: 200px;position: relative;">Shkolla Digjitale</div>
+    <script>
+        $(document).ready(function(){
+            $("#but1").click(function(){
+                $("#div1").animate({
+                    left: '750px',
+                    opacity: '0.3',
+                    height: '150px',
+                    width:'150px'
+                },4000);
+            });
+        });
+    </script>
+<button id="but2">Animate1</button>
+<div id="div2" style="background-color: orange;width: 200px;height: 200px;position: relative;">Shkolla Digjitale</div>
+<script>
+    $(document).ready(function(){
+        $("#but2").click(function(){
+        $("#div2").animate({
+            top:'250px',
+            height:'toggle',
+            width: 'toggle'
+            },3000);
+        });
+    });
+</script>
+<button id="but3">Animate2</button>
+<div id="div3" style="background-color: blue;width: 200px;height: 200px;position: relative;">Shkolla Digjitale</div>
+<script>
+    $(document).ready(function(){
+        $("#but3").click(function(){
+            var div = $("#div3");
+            div.animate({top:'500px',height:'toggle',width:'toggle'},2000);
+            div.animate({left:'500px',height:'toggle',width:'toggle'},2000);
+            div.animate({top:'0px',height:'toggle',width:'toggle'},2000);
+            div.animate({left:'0px',height:'toggle',width:'toggle'},2000);
+        });
+    });
+</script>
+<h1>Stop()</h1>
+<button id="but4">Animate4</button>
+<button id="but5">Stop</button>
+<button id="but6">Stop All</button>
+<button id="but7">Stop Finish</button>
+<div id="div4" style="background-color: blue;width: 200px;height: 200px;position: relative;">Shkolla Digjitale</div>
+<script>
+    $(document).ready(function(){
+        $("#but4").click(function(){
+            var div1 = $("#div4");
+            div1.animate ({top:'500px',height:'toggle',width:'toggle'},4000)
+            .animate ({left:'500px',height:'toggle',width:'toggle'},4000)
+            .animate ({top:'0px',height:'toggle',width:'toggle'},4000)
+            .animate ({left:'0px',height:'toggle',width:'toggle'},4000)
+        });
+    });
+
+    $("#but5").click(function(){
+        $("#div4").stop();
+    });
+    $("#but6").click(function(){
+        $("#div4").stop(true);
+    });
+    $("#but7").click(function(){
+        $("#div4").stop(true,true);
+    });
+</script>
+<h1>Callback()</h1>
+<button id="but8">Kliko</button>
+<p id="p1">Prizren</p>
+<script>
+    $(document).ready(function(){
+        $('#but8').click(function()
+    {
+            $("p1").toggle(function(){
+                alert('This is a paragraph.');
+            });
+        });
+    });
+</script>
+
+
+
+
+
+-
+
+
+</body>
+</html>

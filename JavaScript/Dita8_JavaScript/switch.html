@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Switch JS</title>
+</head>
+<body>
+    <script>
+        var x = prompt('Shenoje ketu');
+        switch(x)
+        {
+            case "1":
+                document.write("i pari");
+                break;
+
+            case "2":
+                document.write("i dyti");
+                break;
+            case "3":
+                document.write("i treti");
+                break;
+            case "4":
+                document.write("i katerti");
+                break;
+            default:
+                document.write("asnjeri");
+        }
+    </script>
+    <hr><br>
+    <p id="p2"></p>
+    <script>
+        var grade = prompt("Shenoje ketu per detyren e dyte");
+        switch(true){
+            case grade >= 90:
+                document.getElementById('p2').innerHTML = 'A';
+                break;
+            case grade >= 80:
+                document.getElementById('p2').innerHTML = 'B';
+                break;
+                case grade >= 70:
+                document.getElementById('p2').innerHTML = 'C';
+                break;
+                case grade >= 60:
+                document.getElementById('p2').innerHTML = 'D';
+                break;
+                default:
+                    document.getElementById('p2').innerHTML = 'F';
+            }  
+
+    </script>
+    <script>
+        var y;
+        switch(x)
+        {
+        case "c":
+        y="i pari";  
+        break;
+        
+        case "A":
+        y="i dyti";
+        break;
+        
+        case "B":
+        y="i treti";
+        break;
+        
+        default:
+        y="asnjëri";
+        }
+        document.write(y);
+        </script>
+</body>
+</html>

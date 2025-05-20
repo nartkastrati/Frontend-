@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Detyre jQuery Animate!</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Detyra 1</h3>
+    <button id="bt1">Start Animation</button>
+    <div id="div1" style="background-color: black;width:106px;height:100px;position:relative;display:none;"></div>
+    <script>
+          $(document).ready(function(){
+            $("#bt1").click(function(){
+                $("#div1").animate({
+                    height:'toggle',
+                }, 500);
+            });
+        });
+            
+            
+            
+    </script>
+    <h3>Detyra 2</h3>
+    <button id="bt2">Start Animation2</button>
+    <div id="div2" style="background-color: green;width:106px;height:100px;position:relative;"></div>
+    <script>
+            $(document).ready(function(){
+        $("#bt2").click(function(){
+            var div = $("#div2");
+            div.animate({height:'300px'},1000);
+            div.animate({height:'300px',width:'700px',opacity:'0.4'},1000);
+            div.animate({height:'150px',width:'700px', opacity:'1'},1000);
+            div.animate({height:'150px', width:'150px',opacity:'0.4'},1000);
+        });
+    });
+    </script>
+    <h3>Detyra3</h3>
+    <p id="p2" style="color:blue;">jQuery is fun!</p>
+    <button id="bt3">Click</button>
+    <script>
+        $(document).ready(function(){
+            $('#bt3').click(function(){
+                $('#p2').hide(1000).show(1000);
+            });
+        });
+    </script>
+</body>
+</html>

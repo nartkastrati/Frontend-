@@ -1,0 +1,44 @@
+#pverflow{
+    text-overflow: clip;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 20px;
+}
+#poverflowhidden{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 20px;
+}
+#pwordwrap{
+    word-wrap: break-word;
+    width: 42px;
+    border: 1px solid black;
+}
+#pwordbreak{
+    word-break: keep-all;
+    width: 60px;
+    border: 1px solid black;
+}
+#pwordbreakall{
+    word-break: break-all;
+    width: 75px;
+    border: 1px solid black;
+}
+#pwritingmodeh{
+    writing-mode: horizontal-tb;
+}
+#pwritingmodev{
+    writing-mode: vertical-rl;
+}
+#divtransition{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 4s, height 1s;
+}
+#divtransition:hover{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}

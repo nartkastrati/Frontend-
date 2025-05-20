@@ -1,0 +1,113 @@
+body{
+    background-color: #303b43;
+}
+#foto1{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
+
+#div1{
+    position: absolute;
+    border: white solid 1px;
+    background-color: white;
+    width: 350px;
+    height: 519px;
+    margin-left: 500px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 3px rgb(46, 45, 45);
+    top: 100px;
+    
+}
+#div2{
+    border: solid grey 1px;
+    border-top-right-radius: 5%;
+    background-color: grey;
+    width: 150px;
+    display: block;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 90px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}  
+#div3{
+    border: solid grey 1px;
+    background-color: grey;
+    width: 150px;
+    display: block;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 265px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+} 
+#div4{
+    border: solid grey 1px;
+    border-bottom-right-radius: 3%;
+    background-color: grey;
+    width: 150px;
+    display: block;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 440px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+} 
+#koldfreg{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+h3{
+    color: #cf2eb5;
+    margin-left: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+h5{
+    color:#e064cc;
+    margin-left: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+button{
+    background-color: white;
+    height: 40px;
+    width: 130px;
+    border: 4px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 3px rgb(46, 45, 45);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    color: #cf2eb5;
+    font-size: medium;  
+    transition: background-color 0.5s, color 0.5s;
+}
+button:hover{
+    background-color: #cf2eb5;
+    color: white;
+}
+#div2:hover{
+    border: solid #303b43 1px;
+    background-color: #303b43;
+}
+#div3:hover{
+    border: solid #303b43 1px;
+    background-color: #303b43;
+}
+#div4:hover{
+    border: solid #303b43 1px;
+    background-color: #303b43;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .para{
+            color:blue;
+            font-family: fantasy;
+            font-size: 25px;
+            background: red;
+            }
+        .para1{
+            color:lightblue;
+            font-family: fantasy;
+            font-size: 16px;
+            }
+        .klasa{
+            list-style-type: lower-alpha;
+            color: blue;
+        }
+        .klasa1{
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+        #p2{
+            color:red;
+            font-family: fantasy;
+            font-size: 20px;
+            }
+        #p4{
+            width:200px;
+            height:200px;
+            border:30px solid black;
+            padding: 20px;
+            margin:50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Classes</h1>
+    <h2>Add Class</h2>
+    <p id="p1">Shkolla Digjitale</p>
+    <ol id="ol1">
+        <li>prizren</li>
+        <li>prizren</li>
+        <li>prizren</li>
+    </ol>
+    <button id="but1">AddClass</button>
+    <button id="but2">AddClass1</button>
+    <script>
+        $(document).ready(function(){
+            $('#but1').click(function(){
+                $('#p1').addClass('para')
+            });
+        });
+        $(document).ready(function(){
+            $('#but2').click(function(){
+                $('#ol1').addClass('klasa klasa1 ')
+            });
+        });
+    </script>
+    <h2>Remove CLASS</h2>
+    <p id="p21" class="para1">Shkolla Digjitale1</p>
+    <ol id="ol2">
+        <li>prizren</li>
+        <li>prizren</li>
+        <li>prizren</li>
+    </ol>
+    <button id="but3">RemoveClass</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#but3').click(function()
+            {
+                $("#p21").removeClass('para1')
+            });
+        });
+    </script>
+</body>
+</html>

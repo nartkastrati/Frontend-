@@ -1,0 +1,36 @@
+#pAfter::after{
+    display: inline-block;
+    transform: scale(1);
+}
+#pBefore::before{
+    content: "Programo!!!.";
+    color: red;
+    font-size: 30px;
+}
+#pFirstLine::first-line{
+    background-color: yellow;
+}
+.pFirstLetter::first-letter{
+    font-size: 200%;
+    color: #8a2be2
+}
+#pSelection::selection{
+color: yellow;
+background: blue;
+text-shadow: 0px 1px 3px white;
+}
+::selection{
+    background-color: rgb(0, 255, 38);
+}
+span::selection{
+    background-color: rgb(0, 255, 38);
+}
+/*
+#pAfter::after{
+    position: absolute;
+    content: url(foto1.png)
+    display: inline-block;
+    transform: scale(0.5);
+    margin-top: -59px;
+}
+*/

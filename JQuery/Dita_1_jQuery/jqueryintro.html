@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>		 
+</head>
+<body>
+	<h2>Introduction to JQuery</h2>
+	<p class="phide">Prizren</p>
+	<p class="phide">Prishtine</p>
+
+	<button id="btnhide">ClickHide</button>
+	<button id="btnshow">ClickShow</button>
+	<script>
+		$('#btnhide').click(function()
+					{
+						$(".phide").hide();
+							});
+
+		$('#btnshow').click(function(){
+					$(".phide").show();
+				});
+	</script>
+	<h3 id="p111">Shkolla Digjitale111</h3>
+	<script>
+		$(document).ready(function(){
+			$("p").css("color","red");
+		});
+		$(document).ready(function(){
+			$("#p1").css("color","blue");
+		});
+		$(document).ready(function(){
+			$(".h1").css("background-color","blue");
+		});
+	</script>
+	<p id="p1">Shkolla Digjitale1</p>
+	<p id="p2">Shkolla Digjitale2</p>
+	<p id="p3">Shkolla Digjitale</p>
+	<p id="p4">Shkolla Digjitale4</p>
+	<h1 class="h1">Shkolla Digjitale</h1>
+	<h1 class="h1">Shkolla Digjitale</h1>
+	<h1 class="h1">Shkolla Digjitale</h1>
+
+	<button id="butt2">Kliko1</button>
+	<script>
+		$(document).ready(function(){
+			$('#butt2').click(function(){
+				$(this).css({'font-size':'40px','background':'green',});
+				$("#p4").css(
+					{
+						'font-size':'22px',
+						'background':'red',
+						"color":"white"
+					});
+		});
+			});
+		
+	</script>
+	<button id="but1">Kliko2</button>
+	<script>
+		$(document).ready(function(){
+			$('#but1').click(function()
+			{
+				$(this).hide();
+			});
+		});
+	</script>
+	<button id='butt3'>Kliko3</button>
+	<script>
+		$(document).ready(function()
+		{
+			$('#butt3').click(function(){
+				$(this).css({'font-size':'10px','background':'pink'})
+			});
+		});
+	</script>
+</body>
+</html>

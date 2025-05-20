@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Date JS</title>
+</head>
+<body>
+    <h1>Date</h1>
+    <script>
+        var a = new Date();
+        document.write(a);
+  </script>
+  <br><br>
+  <script>
+    var a = new Date (2021, 0, 2, 10, 20, 49);
+    document.write(a+'<br>');
+  </script>
+  <br>
+  <script>
+    var b = new Date(2020);
+    document.write(b);
+  </script>
+  <br><br>
+  <script>
+    var c = new Date('Feb 20 2019 11:54:20');
+    document.write(c);
+  </script>
+  <br><br>
+  <script>
+    var d = new Date(99, 1, 1);
+    document.write(d);
+  </script>
+  <h2>Date Format</h2>
+  <script>
+    var a = new Date ('2019');
+    document.write(a+'<br>');
+    
+    var b = new Date ("05/30/2019");
+    document.write(b)
+
+    var c = new Date ("may 30 2019");
+    document.write(c)
+  </script>
+  <br><br>
+  <h2>Data Parse</h2>
+  <script>
+    var msec = Date.parse("January 1 2025");
+    document.write(msec);
+    </script>
+    <script>
+var z = Date.parse ("4765200000000000")
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Events </title>
+</head>
+<body>
+    <h1> DOM Events </h1>
+    <h3>OnCLick</h3>
+    <p id="p1">Prizren</p>
+    <button onclick = 'ndrroje()'>Click</button>
+    <script>
+        function ndrroje(){
+            document.getElementById('p1').innerHTML = 'Prishtine';
+        }
+    </script>
+    <button onclick ='text1(this)'>Click2</button>
+    <p onclick='text1(this)'>Prizren</p>
+    <script>
+        function text1(para){
+            para.innerHTML = 'Prishtine';
+        }
+    </script>
+        <h3>OnDbClick</h3>
+        <p ondbclick = 'kliko2(this)' onclick='kliko(this)'>DblClick</p>
+        <script>
+            function kliko2(para){
+                para.innerHTML = 'Click';
+            }
+            
+            function kliko(pas){
+                pas.innerHTML = 'DblClick';
+            }
+        </script>
+        <h3>Hide and Show</h3>
+        <p id="p2">Shkolla Digjitale</p>
+        <button onclick='hide1()'>Hide</button>
+        <button onclick='show1()'>Show</button>
+        <script>
+            function hide1(){
+                document.getElementById('p2').style.visibility = 'hidden';
+            }
+
+            function show1(){
+                document.getElementById('p2').style.visibility = 'visible';
+            }
+        </script>
+</body>
+</html>

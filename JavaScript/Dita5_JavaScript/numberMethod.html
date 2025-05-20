@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NumberMethod JS Konvertimi i variablave ne numra</title>
+</head>
+<body>
+	<script>
+		var x = 123e3;
+		var y = 123e-3;
+		document.write(x+'<br>'+y);
+	</script>
+	<br><br>
+	<script>
+		var x =999999999999999;
+		var y = 9999999999999999;
+		document.write (x+'<br>'+y);
+	</script>
+	<br><br>
+	<script>
+		var x = 0.2 + 0.1;
+		document.write (x);
+	</script>
+	<br><br>
+	<script>
+		var x = 10;
+		var y = 20;
+		var z = "Rezultati eshte : " + x + y;
+		document.write (z);
+	</script>
+	<br><br>
+	<script>
+		var x = 10;
+		var y = 20;
+		var totali = x + y;
+		var z = "Rezultati eshte: ";
+		document.write (z+totali);
+	</script>
+	<br><br>
+	<script>
+		var x = "100";
+		var y = "10";
+		var z = x / y;
+		document.write(z);
+	</script>
+	<br><br>
+	<script>
+		var x = 100 / "Lenovo"; //NaN
+		document.write (x);
+	</script>
+	<br><br>
+	<script>
+		var x = 123;
+		document.write(x.toString() +10+ "<br>");
+		document.write ((123).toString()+10+"<br>");
+		document.write((100+23).toString()+10);
+	</script>
+	<br><br>
+	<h2>Konvertimi i variablave ne numer:</h2>
+	<script>
+		document.write(
+Number(true) + "<br>" +
+Number(false) + "<br>" +
+Number("10") + "<br>" +
+Number("  10") + "<br>" +
+Number("10  ") + "<br>" +
+Number(" 10  ") + "<br>" +
+Number("10.33") + "<br>" +
+Number("10,33") + "<br>" +
+Number("10 33") + "<br>" +
+Number(1/0));
+	</script>
+	<br><br>
+	<script>
+		document.write (
+parseInt("10") + 10 + "<br>" +
+parseInt("10.73")  + "<br>" +
+parseInt("10,33") + "<br>" +
+parseInt("1 10 6 10") + "<br>" +
+parseInt("10 years")  + "<br>" +
+parseInt("years 10")  + "<br>" +
+			)
+	</script>
+	<br><br>
+	<script>
+parseFloat("10") + 10 + "<br>" +
+parseFloat("10.522")  + "<br>" +
+parseFloat("10,33") + "<br>" +
+parseFloat("1 10 6 10") + "<br>" +
+parseFloat("10 years")  + "<br>" +
+parseFloat("years 10")  + "<br>" +
+	</script>
+</body>
+</html>

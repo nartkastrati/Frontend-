@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object JS</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        var emriLaptopit = 'Lenovo';
+        var laptopi ={
+            emri: 'Lenovo',
+            modeli: 'Thinkpad T430s',
+            ngjyra:zeze,
+            pesha: '1.20kg'
+        }
+        document.write(laptopi.emri);
+
+        document.getElementById('p1').innerHTML='Emri i laptopit eshte ' + laptopi.emri +', modeli eshte' + laptopi.modeli + ', ngjyra ' + laptopi.ngjyra ;
+        document.write(   'Emri i laptopit eshte:   '+laptopi.emri+'<br>');
+        document.write(laptopi['pesha']+"<br>");
+    </script>
+    <p id="p2"></p>
+    <script>
+        var personi ={
+            emri: 'Kebir',
+            mbiemri: 'Cesko',
+            vendlindja: 'Prizren',
+            gjatesia:1.65
+        }
+        personi.mosha=25;
+        personi.emri ="Digjitale"
+        delete personi.gjatesia;
+        document.getElementById('p2').innerHTML='Emri im eshte  '+personi.emri + 'Mbiemri im eshte  '+personi.mbiemri + '   mosha ime eshte '+ personi.mosha + '  vendlindja ime eshte '+ personi.vendlindja + "  Gjatesia  "+personi.gjatesia;
+
+        var x = personi;
+        x.gjatesia = 1.85;
+        x.ram ="16GB";
+        document.write(personi.gjatesia+personi.ram+'<br>');
+    </script>
+    <h2>Metodat e objekteve</h2>
+    <script>
+        var laptopi ={
+            emri: 'Lenovo',
+            modeli:'Thinkpad T430s',
+            ngjyra: 'bardhe',
+            pesha:'1.38kg',
+            lloji: function(){
+                return this.emri +'    '+ this.modeli+" "+ this.ngjyra;
+            }
+        }
+    </script>
+    <h2>Konstruktoret e Objektit</h2>
+    <script>
+        function personi(a, b, c, d){
+            this.emri =a;
+            this.mbiemri =b;
+            this.mosha =c;
+            this.gjinia =d;
+        }
+        var x =new personi ('nart', 'cesko', 25," Mashkull");
+        document.write(x.emri + x.mbiemri + x.mosha + x.gjinia+"<br>");
+        var y = new personi('shkolla', 'digjitale', 6);
+        document.write (y.emri + y.mbiemri + y.mosha);
+    </script>
+</body>
+</html>

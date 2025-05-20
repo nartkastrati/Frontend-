@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Arrays Sort JS </title>
+</head>
+<body>
+	<button onclick ="document.getElementById('p1').innerHTML = laptop;">Sort</button>
+	<p id="p1"></p>
+	<script>
+		var laptop = ["dell", "acer", "hp", "lenovo"];
+		document.getElementById("p1").innerHTML = laptop;
+		laptop.sort();
+	</script>
+	<br><br>
+	<button onclick="document.getElementById('p2').innerHTML = numrat1;">Sort Number</button>
+	<p id = "p2"></p>
+	<script>
+		var numrat1 = [8,1,9,3,5,6,8,90,10];
+		document.getElementById("p2").innerHTML = numrat1;
+		numrat1.sort();
+	</script>
+	<button onclick="document.getElementById('p3').innerHTML = laptop1;">Reverse</button>
+	<p id = "p3"></p>
+	<br><br>
+	<script>
+		var laptop1 = [3,4,1,6,4,6,8,9,1];
+		document.getElementById("p3").innerHTML = laptop1;
+		laptop1.reverse();
+	</script>
+	<br><br>
+	<button onclick="sortim()">Sort Numeric</button>
+	<p id="p4"></p>
+	<script>
+		var numrat = [40,100,1,5,25,10,15,105, "string"];
+		document.getElementById("p4").innerHTML = numrat;
+		function sortim()
+		{
+			numrat.sort(function(a, b){return a - b});
+			document.getElementById("p4").innerHTML = numrat;
+		}
+	</script>
+</body>
+</html>

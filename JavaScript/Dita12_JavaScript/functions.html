@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functions JS</title>
+</head>
+<body>
+    <h1>Funksionet</h1>
+    <p id = "p1" style="color: #9300B2;"></p>
+    <script>
+        function mbledh(){
+            return 4*4;
+        }
+        document.getElementById('p1').innerHTML = mbledh();
+        document.write(mbledh());
+    </script>
+    <br>
+    <script>
+        function a(x,y){
+            var x = 12;
+            return x * y;
+        }
+        document.write("hello"+"<br>");
+        document.write(a(3,4)+'<br>');
+        document.write(a(7,4)+'<br>');
+        document.write(a('shtate',4));
+    </script>
+    <br><br>
+    <script>
+        function b(x,y){
+            var x=1
+            var y=1
+            var z=x+y;
+            return z;
+        }
+        document.write(b()+"<br>");
+        document.write(b(2,3));
+    </script>
+    <br><br>
+    <h1>funksionet diqka</h1>
+    <script>
+        var test = function (a,b){
+            return a*b;
+        }
+        document.write(test(4,5)+'<br>');
+         
+        function uni(a,b){
+            return a+b;
+        }
+        var x = uni (5,4);
+        document.write(x+'<br>');
+
+        function prizreni (a,b,c,d){
+            return arguments.length;
+        }
+        document.write(prizreni(1,2,3,4));
+    </script>
+    <h2>Function scope</h2>
+    <script>
+        function pz(){
+           var a = 5;
+           return a*a;
+        }
+        document.write(pz()+'<br>');
+
+        var a = 6;
+        function pr(){
+            return a * a;
+        }
+        document.write(pr()+'<br>');
+    </script>
+    <br>
+    <script>
+        var numero = 0;
+        function mbledh(){
+            numero += 1;
+            return;
+        }
+        mbledh();
+        mbledh();
+        mbledh();
+
+        document.write(numero);
+    </script>
+    <br>
+    <script>
+        function mbledh1(){
+            var numero1 = 0;
+            numero1 += 1;
+            return numero1;
+        }
+        mbledh1();
+        mbledh1();
+        mbledh1();
+        document.write(mbledh1());
+    </script>
+    <br>
+    <script>
+        function mbledh(){
+            var x = 0;
+            function shto(){
+                x+=1;
+            }
+            shto();
+            shto();
+            shto();
+            return x;
+        }
+        document.write(mbledh());
+    </script>
+</body>
+</html>

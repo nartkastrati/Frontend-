@@ -1,0 +1,32 @@
+body{
+    background-color: grey;
+}
+div{
+    display: inline;
+}
+#div2{
+    width: 250px;
+    height: 200px;
+    transition: width 2s, height 2s;
+    opacity: 0.5;
+}
+#div2:hover{
+    opacity: 1;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+}
+#div1{
+    width: 250px;
+    height: 200px;
+    transition: width 2s, height 2s;
+    opacity: 0.5;
+}
+#div1:hover{
+    opacity: 1;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+}

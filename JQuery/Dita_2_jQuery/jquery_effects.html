@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>JQuery Effects</title>
+</head>
+<body>
+    <h1>EFFECTS IN JQUERY</h1>
+    <p>BASIC EFFECTS</p>
+    <p>HIDE AND SHOW</p>
+    <p id="p1">Paragraf</p>
+    <button id="but1">HIDE</button>
+    <button id="but2">SHOW</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#but1').click(function()
+            {
+                $('#p1').hide();
+            });
+            $('#but2').click(function(){
+                $('#p1').show();
+            });
+        });
+    </script>
+    <p id="p2">Paragraf</p>
+    <button id='but3'>Kliko</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#but3').click(function()
+            {
+                $('#p2').hide('slow');
+            });
+            $('#but3').dblclick(function()
+            {
+                $('#p2').show(5000);
+            });
+        });
+    </script>
+    <p>TOGGLE</p>
+    <p id="p3">PARAGRAFI</p>
+    <button id="but4">Toggle</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#but4').click(function()
+            {
+                $('#p3').toggle(2000);
+            })
+        })
+    </script>
+    <h1>Fading Effects</h1>
+    <p>FadeIn() and FadeOut()</p>
+    <p id="p4">Shkolla Digjitale</p>
+    <button id="but5">FadeOut</button>
+    <button id="but6">FadeIn</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#but5').click(function()
+            {
+                $('#p4').fadeOut(2000);
+            });
+        });
+        $(document).ready(function()
+        {
+            $('#but6').click(function()
+            {
+                $('#p4').fadeIn(3000);
+            });
+        });
+    </script>
+</body>
+</html>

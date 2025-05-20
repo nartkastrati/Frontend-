@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JS Operatoret </title>
+</head>
+<body>
+<p id="p1">Shkolla</p>
+<p id="p2">Shkolla </p>
+<h3>Operatoret Percaktues</h3>
+<script>
+	var name = 'Digjitale';
+	document.getElementById('p2').innerHTML = name;
+	var x = 10;
+	x += 5;
+	document.write(x + '<br>');
+	var y = 10;
+	y *= 10;
+   document.write(y+'x + <br>');
+   var z = 20;
+   z %= 3;
+   document.write(z+'<br>');
+</script>
+<br>
+<p>Operatoret Aritmetik </p>
+<script>
+	var x = '20';
+	var y = '7';
+	var z = x + y;
+	document.write(z+"<br>");
+    var b = x * y;
+    document.write(b+"<br>")
+
+    var a = x % y;
+    document.write(a+"<br>");
+    y++;
+    document.write(y+"<br>")
+    y--;
+    document.write(y);
+</script>
+<p>Operatoret String</p>
+<script>
+	var firstName = "Nart ";
+	var lastName = "Kastrati";
+	var fullName=firstName+lastName;
+	document.write (fullName+"<br>");
+</script>
+<p>Operatoret Krahasues </p>
+<script>
+	var a = '20';
+	var b = 20;
+	document.write((a == b) + '<br>');
+	document.write((a != b + '<br>'));
+	document.write((a === b + '<br>'));
+	document.write((a !== b + '<br>'));
+	document.write((a >= b + '<br>'));
+	document.write((a <= b + '<br>'));
+	document.write((a < b + '<br>'));
+	document.write((a > b + '<br>'));
+</script>
+<br>
+<p> Operatoret Logjik </p>
+<script>
+	var x = 10;
+	var y = "3";
+	var z = 10;
+	document.write ((x < 20 && y > 1) + '<br>'+(x < 20 && y < 1)+'<br>');
+	document.write ((x < 20 || y > 1) + '<br>'+(x < 20 || y < 1)+'<br>');
+	document.write(!(x === y)+'<br>'+!(x > y));
+</script>
+</body>
+</html>
