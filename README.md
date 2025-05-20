@@ -1,0 +1,1 @@
+# Gjera-qe-programoj-ne-shkolle
