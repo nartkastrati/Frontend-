@@ -6,4 +6,5 @@ Tek ky kod gjenden disa gjuhe te ndryshme, si:
 - JavaScript
 - jQuery
 - Bootstrap
+  
 Ky kod mund te perdoret lirisht, varesisht per ndonje baze apo kopjimi, kodi eshte open-source.
